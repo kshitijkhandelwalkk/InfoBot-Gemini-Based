@@ -1,1 +1,1 @@
-# code-prep-gemini-ai-course
+# Image Capturing, Embedded Text Search, and AMA Chatbot
