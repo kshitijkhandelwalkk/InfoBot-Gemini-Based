@@ -85,7 +85,7 @@ if selected == "Image Captioning":
 
         default_prompt = "write a short caption for this image"  # change this prompt as per your requirement
 
-        # get the caption of the image from the gemini-pro-vision LLM
+        # get the caption of the image from the gemini-1.5-flash LLM
         caption = gemini_pro_vision_response(default_prompt, image)
 
         with col2:

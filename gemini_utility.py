@@ -23,9 +23,9 @@ def load_gemini_pro_model():
     return gemini_pro_model
 
 
-# get response from Gemini-Pro-Vision model - image/text to text
+# get response from gemini-1.5-flash model - image/text to text
 def gemini_pro_vision_response(prompt, image):
-    gemini_pro_vision_model = genai.GenerativeModel("gemini-pro-vision")
+    gemini_pro_vision_model = genai.GenerativeModel("gemini-1.5-flash")
     response = gemini_pro_vision_model.generate_content([prompt, image])
     result = response.text
     return result
