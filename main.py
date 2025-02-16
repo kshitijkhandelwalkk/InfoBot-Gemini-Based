@@ -37,7 +37,7 @@ def translate_role_for_streamlit(user_role):
         return user_role
 
 
-# chatbot page
+# Chatbot page
 if selected == 'ChatBot':
     model = load_gemini_pro_model()
 
@@ -92,7 +92,7 @@ if selected == "Image Captioning":
             st.info(caption)
 
 
-# text embedding model
+# Text embedding page
 if selected == "Embed text":
 
     st.title("🔡 Embed Text")
@@ -105,7 +105,7 @@ if selected == "Embed text":
         st.markdown(response)
 
 
-# text embedding model
+# Ask me anything page
 if selected == "Ask me anything":
 
     st.title("❓ Ask me a question")

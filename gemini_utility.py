@@ -49,16 +49,3 @@ def gemini_pro_response(user_prompt):
     return result
 
 
-# result = gemini_pro_response("What is Machine Learning")
-# print(result)
-# print("-"*50)
-#
-#
-# image = Image.open("test_image.png")
-# result = gemini_pro_vision_response("Write a short caption for this image", image)
-# print(result)
-# print("-"*50)
-#
-#
-# result = embeddings_model_response("Machine Learning is a subset of Artificial Intelligence")
-# print(result)
