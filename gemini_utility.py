@@ -19,7 +19,7 @@ genai.configure(api_key=GOOGLE_API_KEY)
 
 
 def load_gemini_pro_model():
-    gemini_pro_model = genai.GenerativeModel("models/gemini-1.5-pro-001")
+    gemini_pro_model = genai.GenerativeModel("gemini-2.5-pro-exp-03-25")
     return gemini_pro_model
 
 
@@ -43,7 +43,7 @@ def embeddings_model_response(input_text):
 
 # get response from Gemini-Pro model - text to text
 def gemini_pro_response(user_prompt):
-    gemini_pro_model = genai.GenerativeModel("models/gemini-1.5-pro-001")
+    gemini_pro_model = genai.GenerativeModel("gemini-2.5-pro-exp-03-25")
     response = gemini_pro_model.generate_content(user_prompt)
     result = response.text
     return result
