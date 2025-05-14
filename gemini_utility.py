@@ -41,7 +41,7 @@ def embeddings_model_response(input_text):
     return embedding_list
 
 
-# get response from Gemini-Pro model - text to text
+# get response - text to text
 def gemini_pro_response(user_prompt):
     gemini_pro_model = genai.GenerativeModel("gemini-2.0-flash")
     response = gemini_pro_model.generate_content(user_prompt)
