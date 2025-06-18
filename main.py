@@ -13,13 +13,13 @@ from gemini_utility import (load_gemini_pro_model,
 working_dir = os.path.dirname(os.path.abspath(__file__))
 
 st.set_page_config(
-    page_title="Gemini AI",
-    page_icon="🧠",
+    page_title="KHANDELWAL's APP",
+    page_icon="🤖",
     layout="centered",
 )
 
 with st.sidebar:
-    selected = option_menu('Gemini AI',
+    selected = option_menu('InfoBot',
                            ['ChatBot',
                             'Image Captioning',
                             'Embed text',
@@ -46,7 +46,7 @@ if selected == 'ChatBot':
         st.session_state.chat_session = model.start_chat(history=[])
 
     # Display the chatbot's title on the page
-    st.title("🤖 ChatBot")
+    st.title(" 💁🏼 How Can I help You?")
 
     # Display the chat history
     for message in st.session_state.chat_session.history:
@@ -54,7 +54,7 @@ if selected == 'ChatBot':
             st.markdown(message.parts[0].text)
 
     # Input field for user's message
-    user_prompt = st.chat_input("Ask Gemini-Pro...")  # Renamed for clarity
+    user_prompt = st.chat_input("Ask Khandelwal")  # Renamed for clarity
     if user_prompt:
         # Add user's message to chat and display it
         st.chat_message("user").markdown(user_prompt)
@@ -70,7 +70,7 @@ if selected == 'ChatBot':
 # Image captioning page
 if selected == "Image Captioning":
 
-    st.title("📷 Snap Narrate")
+    st.title("🏙️ Upload an Image")
 
     uploaded_image = st.file_uploader("Upload an image...", type=["jpg", "jpeg", "png"])
 
@@ -95,7 +95,7 @@ if selected == "Image Captioning":
 # Text embedding page
 if selected == "Embed text":
 
-    st.title("🔡 Embed Text")
+    st.title("💬 Embed Text")
 
     # text box to enter prompt
     user_prompt = st.text_area(label='', placeholder="Enter the text to get embeddings")
@@ -108,7 +108,7 @@ if selected == "Embed text":
 # Ask me anything page
 if selected == "Ask me anything":
 
-    st.title("❓ Ask me a question")
+    st.title("Ask me a question❓")
 
     # text box to enter prompt
     user_prompt = st.text_area(label='', placeholder="Ask me anything...")
